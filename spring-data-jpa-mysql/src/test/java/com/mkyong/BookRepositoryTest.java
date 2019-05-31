@@ -1,5 +1,6 @@
 package com.mkyong;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,8 @@ public class BookRepositoryTest {
     @Autowired
     private BookRepository repository;
 
-    @Test
+	@Test
+	@Ignore
     public void testFindByName() {
 
         entityManager.persist(new Book("C++"));
